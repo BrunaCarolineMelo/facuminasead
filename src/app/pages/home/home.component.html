@@ -1,0 +1,60 @@
+<app-nav></app-nav>
+
+<!-- Page Content -->
+
+<div class="container">
+
+    <div class="row">      
+
+        <div class="col-md-6 col-xs-6 col-sm-8">
+  
+          <form>
+              <div class="card">
+                  <div class="card-header">
+                    O que deseja estudar?
+                  </div>
+  
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="area">Qual a área deseja de conhecimento?</label>
+                          <select class="form-control" id="area" required>
+                              <option value="{{i}}" *ngFor="let item of data; let i = index">{{item.name}}</option>
+                          </select>
+                        </div>
+                    </div>
+              
+                    <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="curso">Qual curso deseja estudar?</label>
+                          <select class="form-control" id="curso">
+                              
+                          </select>
+  
+                        </div>
+                    </div>
+              
+                    <div class="col-md-12">
+                      <div class="form-group float-right">
+                        <button type="submit" class="btn card-button">Pesquisar</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>       
+          </form> 
+
+        </div>
+  
+      <div class="col-md-6 col-xs-6 col-sm-8 "> 
+        <div class="frasedefeito"><!--my-autoalign-self-center-->
+           <p class="">{{texto}}</p>
+        </div>
+  </div>
+         
+            
+        
+      
+
+      </div>
+      
+  </div>

@@ -1,0 +1,212 @@
+.navbar-brand{
+    color: #ffad33;  
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;/*O tamanho aqui é do nome é temporário, aqui é  o lugar da logo*/
+}
+
+.btn{
+    padding: 0px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    border-color: #ffb84d;
+    color: #ffb84d;
+}
+
+.btn:hover{
+    background-color:  #ffb84d;
+    color: white;
+}
+
+.nav-link{ /*cor da letra do menu*/
+    color: white;
+}
+
+.nav-link:hover{
+    
+    color:#ffb84d;
+}
+
+.Nome{
+    color:#ffb84d;
+    font-size: 20px;/*O tamanho aqui é do nome é temporário, aqui é  o lugar da logo pequena*/
+    font-family: 'Noto Serif', serif;
+    
+}
+
+.menu{
+    text-indent: 30px;
+    font-size: 20px;
+    
+}
+
+.menu-responsive{
+  
+    width: 100%;  
+}
+
+.button{
+
+    cursor: pointer;
+}
+
+.nav-link a{
+    background-color: #333333;
+    padding: 104px;
+    font-size: 12px;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid #222;
+    right: 300px;
+    opacity: 0;
+    margin-top: 200px;
+
+}
+
+.nav-link a:hover{
+
+    background-color: #ffb84d;
+}
+
+
+/*.barra{
+    bg-transparent
+     display: block;
+     
+  
+ }*/
+
+.intensmenuresp{
+    text-indent: 20px;
+   /*  background-color: #333333;
+    height:35%;
+    width:100px;
+    position:relative;
+    transition: all .2s linear;
+     Aqui a cor eu coloco no @media max-width p não prejudicar qndo tiver expandindo o menu*/
+}
+
+.navbar-toggler{ /*proporção de espaço do ícone no menu responsivo*/
+    
+    margin-left: 60%;
+   /*deixando o ícone clicável*/
+}
+
+.navbar a:hover{
+    color: #ffb84d;
+}
+
+
+/*Trabalhando responsividade da paǵina  e elementos dela,
+ de acordo com o tamanho da tela*/
+@media(max-width: 991px) {
+    
+    .logofaculdade{
+
+        display: none;
+    }
+     
+    .menu{
+
+        display: block;
+    } 
+
+}
+
+
+@media(max-width:767px){ /*definindo cor de fundo para menu responsivo*/
+    
+    .barra{
+        background-color: #333333;
+     }
+     /*.menu-responsive{
+        background-color: none;
+    }até agora essa linha não influencia em nada*/ 
+    
+    
+}
+@media(min-width:992px){
+
+    .logofaculdade{
+        position: relative;
+    }
+    .menu-responsive{
+         display: none;
+    }
+    .menu{
+        text-indent: 25px;
+    }
+
+    .container{
+        border-top: 1px transparent solid;
+        border-bottom: 1px transparent solid;
+        transition-property: background-color, border-top-color, border-bottom-color, color;
+    }
+    
+    .container:hover,
+    .container:focus,
+    .container:active,
+    .container:active
+    {
+        border-bottom-color:#b3b3b3;
+        border-top-color: transparent;
+    
+    }
+    
+    #modernbb[style="margin-top: 42px;"] .container:hover,
+    #modernbb[style="margin-top: 42px;"] .container:focus,
+    #modernbb[style="margin-top: 42px;"] .container:active,
+    #modernbb[style="margin-top: 42px;"] .container.active {
+        border-bottom-color: transparent;
+        border-top-color: #3793ff;
+    }
+    
+}
+
+@media(max-width: 477px){/*ajustando o ícone do menu responsivo*/
+    .navbar-toggler{
+       margin-left: 0px;
+      margin-right: -1%;
+        
+    }
+
+
+}
+
+@media(min-width:768px){ /*a partir desse tamanho o menu responsivo fica invisível*/
+    .menu-responsive{
+        position: relative;
+    }
+    .Nome{
+        padding-bottom: 10px;
+    }
+    .container{
+        border-top: 1px transparent solid;
+        border-bottom: 1px transparent solid;
+        transition-property: background-color, border-top-color, border-bottom-color, color;
+    }
+    
+    .container:hover,
+    .container:focus,
+    .container:active,
+    .container:active
+    {
+        border-bottom-color:#b3b3b3;
+        border-top-color: transparent;
+    
+    }
+    
+    #modernbb[style="margin-top: 42px;"] .container:hover,
+    #modernbb[style="margin-top: 42px;"] .container:focus,
+    #modernbb[style="margin-top: 42px;"] .container:active,
+    #modernbb[style="margin-top: 42px;"] .container.active {
+        border-bottom-color: transparent;
+        border-top-color: #3793ff;
+    }
+    
+}
+
+
+
+
